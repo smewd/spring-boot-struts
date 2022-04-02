@@ -1,4 +1,5 @@
 <%@ page language="java"%>
+<%@ taglib prefix="html" uri="http://jakarta.apache.org/struts/tags-html" %>
 <html> 
 	<head>
 		<title>Step 1</title>
