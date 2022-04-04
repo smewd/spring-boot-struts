@@ -20,6 +20,7 @@ import javax.servlet.annotation.WebServlet;
 )
 public class BootActionServlet extends ActionServlet
 {
+	public static final String SERVLET_NAME = "bootActionServlet";
 	public static final String SERVLET_MAPPING = "*.do";
 
 	@Autowired
@@ -27,8 +28,9 @@ public class BootActionServlet extends ActionServlet
 
 
 	@PostConstruct
-	public void setServletMappingForStruts()
+	public void setServletMapping()
 	{
-		servletContext.setAttribute("org.apache.struts.action.SERVLET_MAPPING", SERVLET_MAPPING);
+		this.servletName = SERVLET_NAME;
+		this.servletMapping = SERVLET_MAPPING;
 	}
 }
