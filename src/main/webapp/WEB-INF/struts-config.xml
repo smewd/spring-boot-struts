@@ -5,7 +5,8 @@
 
     <!-- ========== Form Bean Definitions ============ -->
     <form-beans>
-        <form-bean name="testForm" type="com.smood.struts.TestForm"/>
+        <form-bean name="step1Form" type="com.smood.struts.Step1Form"/>
+        <form-bean name="step2Form" type="com.smood.struts.Step2Form"/>
     </form-beans>
 
     <!-- ========== Global Forward Definitions ========= -->
@@ -14,11 +15,17 @@
 
     <!-- ========== Action Mapping Definitions ======== -->
     <action-mappings>
-        <action path="/test" name="testForm"
+        <action path="/step1" name="step1Form"
                 type="org.springframework.web.struts.DelegatingActionProxy"
                 parameter="action"
                 scope="request">
             <forward name="step1" path="/WEB-INF/jsp/step1.jsp"/>
+        </action>
+
+        <action path="/step2" name="step2Form"
+                type="org.springframework.web.struts.DelegatingActionProxy"
+                parameter="action"
+                scope="request">
             <forward name="step2" path="/WEB-INF/jsp/step2.jsp"/>
         </action>
     </action-mappings>
