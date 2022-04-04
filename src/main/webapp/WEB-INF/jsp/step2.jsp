@@ -7,6 +7,8 @@
 </head>
 <body>
     Step 2: <bean:write name="step2Form" property="value"/><br/>
-    <html:link page="/step1">step 1</html:link>
+    <html:form action="step1">
+        <html:submit>Till step1</html:submit>
+    </html:form>
 </body>
 </html>
