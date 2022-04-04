@@ -3,7 +3,6 @@ package com.smood.servlet;
 
 import org.apache.struts.action.ActionServlet;
 
-import javax.annotation.PostConstruct;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
 
