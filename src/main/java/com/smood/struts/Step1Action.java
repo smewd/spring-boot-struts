@@ -8,6 +8,8 @@ import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -15,10 +17,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-//@Component("/step1")
+@Component("/step1")
 public class Step1Action extends ExtendedLookupDispatchAction
 {
-	@Setter
+	@Autowired
 	private DummyService dummyService;
 
 

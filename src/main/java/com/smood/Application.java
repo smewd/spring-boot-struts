@@ -14,7 +14,7 @@ import org.springframework.context.annotation.ComponentScan;
 })
 @ComponentScan(basePackageClasses = {
 		com.smood.service.PackageMarker.class,
-//		com.smood.struts.PackageMarker.class,
+		com.smood.struts.PackageMarker.class,
 })
 public class Application extends SpringBootServletInitializer
 {
